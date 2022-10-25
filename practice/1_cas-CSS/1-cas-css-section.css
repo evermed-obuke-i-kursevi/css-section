@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+
+* {
+    background-color: #d5eaeb;
+}
+
+h1 {
+    color: #dd3300;
+}
+
+.my-h1 {
+    color: darkcyan;
+    font-size: 55px;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+
+[disabled] {
+    color: rgb(59, 58, 58);  
+    background-color: #8d5c4d;
+}
+
+#selector-types {
+    color: rgb(207, 121, 207);
+}
+
+.star {
+    color: rgb(59, 114, 59);
+}
+
+.universal {
+    color: orange;
+    font-family: 'Fuzzy Bubbles', cursive;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice (1. cas CSS sekcije)</title>
+    <style>
+        h1 {
+          color: blue;  
+        }
+    </style>
+    <link rel="stylesheet" href="1-cas-css-section.css">
+    
+</head>
+<body>
+    <main>
+        <div>
+            <!-- ! 1. nacin -->
+            <h1 style="color: red;">Testing inline styles</h1>
+
+            <!-- ! 2. nacin -->
+            <section>
+               <h1>Testing style tag in head element</h1> 
+            </section>
+
+            <!-- ! 3. nacin -->
+            <h1 class="my-h1">Testing class selector styling</h1>
+
+            <p class="my-h1">Lorem, ipsum dolor.</p>
+
+            <!-- ! 4. nacin -->
+            <button disabled>Testing attribute selector</button>
+
+            <!-- ! 5. nacin -->
+            <ol id="selector-types">
+                <li>Element Selector</li>
+                <li>Class Selector</li>
+                <li>Attribute Selector</li>
+                <li>ID Selector</li>
+                <li class="universal">Universal Selector <span>(*)</span> </li>
+            </ol>
+
+            <!-- ! Levels of Specificity (Hierarchy) -->
+            <p>Od dna ka vrhu</p>
+            <ol>
+                <li>
+                    Element Selectors (h1, p, a, button) and pseudo-elements (::after, ::before)
+                </li>
+                <li>
+                    Class Selectors (.my-btn), pseudo-klase (:pseudo-class) i attribute selectors ([disabled])
+                </li>
+                <li>
+                    ID Selectors (#selector-types)
+                </li>
+                <li>
+                    Inline CSS rules (styles) <strong>Izbegavati!!!</strong>
+                </li>
+            </ol>
+
+        </div>
+    </main>
+</body>
+</html>
