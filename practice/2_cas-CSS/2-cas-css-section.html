@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice (2. cas CSS sekcije)</title>
+    <link rel="stylesheet" href="2-cas-css-section.css">
+</head>
+<body>
+    
+    <!-- ! Combinators (4 types) -->
+    <!-- TODO 1. Adjacent (susedni) kombinator -->
+
+    <div class="adjacent-combinator">
+        <h1>Title 1</h1>
+        <p>Paragraph 1</p>
+        <h3>Title 3</h3>
+        <a href="#">Href 1</a>
+        <p>Paragraph 2</p>
+        <h1>Title 1</h1>
+        <p>Paragraph 3</p>
+    </div>
+
+    <!-- TODO 2. General combinator -->
+    <div class="general-combinator">
+        <h2>Title 2</h2>
+        <p>Lorem, ipsum.</p>
+        <h4>Title 4</h4>
+        <h2>Title 2</h2>
+        <a href="#">Href</a>
+        <p>Lorem ipsum dolor sit.</p>
+    </div>
+
+    <!-- TODO 3. Child combinator -->
+    <div class="child-combinator">
+        <h2>Title 2</h2>
+        <p>Lorem, ipsum dolor.</p>
+        <article>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </article>
+        <p>Lorem ipsum dolor sit.</p>
+    </div>
+
+    <!-- TODO 4. Descendant (potomak) combinator -->
+    <div class="descendant-combinator">
+        <h2>Title 2</h2>
+        <p>Lorem, ipsum dolor.</p>
+        <div class="under-div">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        </div>
+        <p>Lorem.</p>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- ! Box-Sizing property -->
+
+    <div class="test-wrapper">
+        <h1>My Title 1</h1>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- ! Display property -->
+
+    <!-- TODO BLOCK level elemente -->
+    <div class="first-div">
+        Block 1
+    </div>
+    <div class="second-div">
+        Block 2
+    </div>
+    <div class="third-div">
+        Block 3
+    </div>
+
+    <!-- TODO INLINE level element -->
+    <span class="inline-el">INLINE element 1</span>
+    <span class="inline-el">INLINE element 2</span>
+    <span class="inline-el">INLINE element 3</span>
+
+
+    <!-- TODO Inline-Block level element -->
+    <a class="inline-block-example" href="#">Inline-block href 1</a>
+    <a class="inline-block-example" href="#">Inline-block href 2</a>
+    <a class="inline-block-example" href="#">Inline-block href 3</a>
+
+    
+    <!-- TODO none displayed elements -->
+    <div class="no-display">
+        <h1>Lorem, ipsum.</h1>
+    </div>
+
+</body>
+</html>

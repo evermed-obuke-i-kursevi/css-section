@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.adjacent-combinator h1 + p {
+    color: red;
+}
+
+.general-combinator h2 ~ p {
+    color: green;
+}
+
+.child-combinator > p {
+    color: #dd3300;
+}
+
+.descendant-combinator p {
+    color: purple;
+}
+
+.test-wrapper h1 {
+    background-color: rgb(230, 217, 193);
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px; */
+    /* Shorthand property */
+    padding: 20px;
+    /* padding: 40px 20px; */
+    /* border-width: 3px;
+    border-style: solid;
+    border-color: green; */
+    border: 3px solid green;
+    margin: 20px;
+}
+
+.first-div,
+.second-div,
+.third-div {
+    display: block; /* ? nepotrebno, ali moze ostati */
+    background-color: aquamarine;
+    border: 1px solid black;
+    font-size: 15px;
+    height: 100px;
+    width: 400px;
+}
+
+.inline-el {
+    display: inline; /* ? nepotrebnom, ali moze ostati */
+    width: 400px;
+    height: 100px;
+}
+
+/* ! Razlika izmedju inline i block level elemenata je u tome sto
+   ! inline elementi nisu podesivi po sirini i visini, dok block el. jesu
+! */
+
+.inline-block-example {
+    display: inline-block;
+    height: 50px;
+    width: 300px;
+    border: 3px solid black;
+    margin: 10px;
+    padding: 20px;
+}
+
+.no-display {
+    /* display: none; */
+    visibility: hidden;
+}
