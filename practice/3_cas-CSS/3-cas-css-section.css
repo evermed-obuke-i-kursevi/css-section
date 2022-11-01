@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+.box-div {
+    width: 300px;
+    background-color: aquamarine;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.test-div {
+    background-color: rgb(230, 230, 209) !important;
+    margin-top: 100px;
+}
+
+.my-div {
+    background-color: aquamarine;
+    margin-top: 200px;
+}
+
+.test-links {
+    margin-top: 100px;
+}
+
+.test-links a:not(.active) {
+    color: red;
+    text-decoration: line-through;
+}
+
+.test-links:hover {
+    background-color: blueviolet;
+    text-transform: uppercase;
+}
+
+span:hover {
+    color: red;
+}
