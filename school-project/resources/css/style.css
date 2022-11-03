@@ -20,15 +20,19 @@ body {
     padding: 20px;
     border-top: 10px solid #ef9273;
     border-bottom: 5px solid #fff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main-header__logo-wrapper {
     font-family: 'Source Code Pro', monospace;
     font-weight: bolder;
     font-size: 25px;
-    display: inline-block;
+    /* display: inline-block;
     vertical-align: middle;
-    width: calc(100% - 510px);
+    width: calc(100% - 510px); */
 }
 
 .main-header__logo-wrapper a {
@@ -48,6 +52,10 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .main-header__main-nav-list-item {
