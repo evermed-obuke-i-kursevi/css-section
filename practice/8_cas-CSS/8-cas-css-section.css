@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url('../../school-project/resources/images/hero-image.png');
+    /* background-image: linear-gradient(to right, #cf8873, #e0c0bf);
+    background-image: radial-gradient(#dd3309, #e0c0bf); */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.my-wrapper {
+    margin-top: 500px;
+}
+
+.my-form {
+    margin-left: 20px;
+}
+
+.required::before {
+    content: "*";
+    color: red;
+    font-weight: bolder;
+}
+
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #dd3300;
+}
+
