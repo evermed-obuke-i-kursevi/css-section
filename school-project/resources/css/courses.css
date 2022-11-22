@@ -78,3 +78,44 @@ p {
     padding: 5px;
     z-index: -1;
 }
+
+@media screen and (max-width: 576px) {
+    .courses-wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+    .intermediate-course {
+        align-self: center;
+    }
+    .courses-wrapper__course {
+        text-align: center;
+    }
+    .courses-wrapper__course ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        margin-top: 10px;
+    }
+    .courses-wrapper__course ul li {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+    }
+    .recommended {
+        position: static;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1440px) {
+    .recommended {
+        position: static;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    .recommended {
+        width: 70%;
+        position: static;
+        text-align: center;
+    }
+}

@@ -345,3 +345,27 @@ body {
     background: #0A66C2;
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+    .about-wrapper__title {
+        font-size: 34px;
+    }
+    .about-wrapper__text {
+        width: 80%;
+        font-size: 15px;
+    }
+    .about-wrapper__founders-card img {
+        width: 300px;
+        height: 300px;
+    }
+    .about-wrapper__founders-card p {
+        width: 100%;
+        font-size: 15px;
+    }
+    .main-footer__nav {
+        width: 80%;
+    }
+    .main-footer__nav-list {
+        justify-content: space-evenly;
+    }
+}
