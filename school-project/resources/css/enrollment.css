@@ -9,6 +9,7 @@
     align-items: center;
     background: url('../images/enrollment-image.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .form-wrapper__form {
@@ -84,9 +85,10 @@
     transition: 0.3s ease;
 }
 
+/* ? :focus pseudo-klasa, u ovom slucaju otklanja outline na focus input polja,itd. */
 textarea:focus,
 select:focus,
-input:focus{
+input:focus {
     outline: none;
 }
 
