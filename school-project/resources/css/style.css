@@ -101,7 +101,7 @@ body {
     width: 90%;
     margin: 50px auto;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row wrap; 
     align-items: center;
     justify-content: space-around;
     font-family: 'Courier Prime', monospace;
