@@ -1,0 +1,79 @@
+header nav {
+  background-color: #dd3300;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav ul li {
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.first-div, .third-div {
+  background-color: aquamarine;
+  color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 3px solid #dd3300;
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 420px) {
+  .first-div, .third-div {
+    background-color: yellow;
+  }
+}
+
+.second-div {
+  background-color: green;
+}
+
+.second-div h2 {
+  color: #dd3300;
+}
+
+.second-div h2:hover {
+  color: white;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.third-div {
+  height: 300px;
+}
+
+.third-div h1 {
+  color: #dd3300;
+}
+/*# sourceMappingURL=scss-practice.css.map */

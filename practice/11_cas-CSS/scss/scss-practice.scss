@@ -1,0 +1,45 @@
+@import './variables';
+@import './header';
+@import './breakpoints';
+
+.first-div {
+    background-color: aquamarine;
+    color: $mainTitleColor;
+    // ! zakomentarisano zbog mixina
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flexRowCenter(center, row);
+    border: 3px solid $subTitleColor;
+    margin-bottom: $biggestMargin;
+
+    @media screen and (max-width: $mobileSize) {
+        background-color: yellow;
+    }
+
+}
+
+// .second-div h2 {
+//     color: $subTitleColor;
+// }
+
+.second-div {
+    background-color: $mainTitleColor;
+    h2 { 
+        color: $subTitleColor;
+        &:hover {
+            color: white;
+            transition: 0.3s ease;
+        }
+    }
+}
+
+.third-div {
+    @extend .first-div;
+    h1 {
+        color: $subTitleColor;
+    }
+    // + - * /
+    height: $biggestMargin*3;
+    // width: $biggestMargin/2;
+}

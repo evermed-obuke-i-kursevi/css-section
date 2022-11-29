@@ -1,0 +1,24 @@
+@import 'variables';
+
+@mixin flexRowCenter($justifyContentParam, $flexDirectionParam) {
+    display: flex;
+    flex-direction: $flexDirectionParam;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: $justifyContentParam;
+}
+
+header {
+    nav {
+        background-color: $subTitleColor;
+        ul {
+            list-style-type: none;
+            @include flexRowCenter(space-between, row-reverse);
+            li {
+                color: black;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+}
