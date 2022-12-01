@@ -47,7 +47,7 @@ h3 {
 	background: #E60023;
 	color: $whiteColor;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $tabletSize) {
 	.team-wrapper__teacher {
 		display: flex;
 		flex-direction: column;

@@ -1,8 +1,12 @@
 @import './utils/variables';
 @import './utils/breakpoints';
+@import './utils/mixins';
 
 * {
 	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
 }
 body {
 	margin: 0;
@@ -12,10 +16,28 @@ body {
 	padding: 20px;
 	border-top: 10px solid $backgroundColor;
 	border-bottom: 5px solid $whiteColor;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-items: center;
+	background-color: $bodyBackgroundColor;
+	position: sticky;
+	top: 0;
+	z-index: 3;
+	@include flexDisplay(
+		space-between,
+		row,
+		wrap,
+		center
+	);
+	// ! napomena: kod iznad je upotreba mixin-a sa istim setup-om kao 4 linije ispod
+	// display: flex;
+	// flex-flow: row wrap;
+	// justify-content: space-between;
+	// align-items: center;
+
+	@media screen and (max-width: $tabletSize) {
+		padding: 20px 0;
+		height: 50vh;
+		flex-direction: column;
+	}
+
 }
 .main-header__logo-wrapper {
 	font-family: $sourceCodePro;
@@ -34,6 +56,11 @@ body {
 	display: inline-block;
 	text-align: right;
 	vertical-align: middle;
+
+	@media screen and (max-width: $tabletSize) {
+		height: 70%;
+	}
+
 }
 .main-header__main-nav-list {
 	list-style-type: none;
@@ -43,6 +70,12 @@ body {
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: wrap;
+
+	@media screen and (max-width: $tabletSize) {
+		flex-direction: column;
+		text-align: center;
+	}
+
 }
 .main-header__main-nav-list-item {
 	display: inline-block;
@@ -56,14 +89,19 @@ body {
 		&:hover {
 			color: $bodyBackgroundColor;
 			background: $backgroundColor;
-			border-radius: 40px;
+			border-radius: $borderRadiusHome;
 		}
 		&:active {
 			color: $bodyBackgroundColor;
 			background: $backgroundColor;
-			border-radius: 40px;
+			border-radius: $borderRadiusHome;
 		}
 	}
+
+	@media screen and (max-width: $tabletSize) {
+		margin-bottom: 40px;
+	}
+
 }
 .hero-wrapper {
 	font-family: $courierPrime;
@@ -192,6 +230,19 @@ body {
     @media screen and (max-width: $tabletSize) {
         width: 80%;
 		font-size: 15px;
+
+		p {
+			&::first-letter {
+				font: {
+					size: 30px;
+				}
+				color: $bodyBackgroundColor;
+			}
+		// 	overflow: hidden;
+		// 	white-space: nowrap;
+		// 	text-overflow: ellipsis;
+		}
+
     }
 
 }
@@ -244,6 +295,33 @@ body {
     }
 
 }
+
+.go-to-top-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	a {
+		text-decoration: none;
+		color: $blackColor;
+		padding: 15px 0;
+		font: {
+			family: $courierPrime;
+			size: 25px;
+			weight: bold;
+		}
+		// ! ovo gore predstavlja kraci nacin pisanja (moguc samo u SCSS)
+		// font-family: $courierPrime;
+		// font-size: 25px;
+		// font-weight: bold;
+		&:hover {
+			transition: $standardTransition;
+			color: $backgroundColor;
+		}
+	}
+
+}
+
 .main-footer {
 	background-color: $bodyBackgroundColor;
 	border-top: 3px solid $whiteColor;
