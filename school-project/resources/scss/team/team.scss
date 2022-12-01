@@ -1,0 +1,127 @@
+@import url('../style.css');
+@import url('../enrollment/enrollment.css');
+@import '../utils/variables';
+@import '../utils/breakpoints';
+
+main {
+	padding-top: 20px;
+	padding-bottom: 40px;
+	background: linear-gradient(135deg, #ec9f85 10%, $articleBackgroundColor);
+}
+.team-wrapper {
+	margin: 0 auto;
+
+    @media screen and (min-width: $tabletSize) {
+        width: 80%;
+    }
+
+}
+.team-title-wrapper {
+	text-align: center;
+	margin-top: 50px 0;
+	font-family: $sourceCodePro;
+}
+.team-title-wrapper__title {
+	margin-bottom: 40px;
+	font-size: 40px;
+	text-shadow: 3px 3px 2px $teamTextShadow;
+}
+.team-wrapper__teacher-about {
+	h1 {
+		text-shadow: 4px 4px 4px $teamTextShadow;
+	}
+	p {
+		font-family: $sourceCodePro;
+		text-shadow: 2px 2px 3px $teamTextShadow;
+	}
+
+    @media screen and (min-width: ($tabletSize+1)) {
+        width: 40%;
+    }
+
+}
+h3 {
+	text-shadow: 4px 4px 4px $teamTextShadow;
+}
+.fa-pinterest {
+	background: #E60023;
+	color: $whiteColor;
+}
+@media screen and (max-width: 768px) {
+	.team-wrapper__teacher {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 50px;
+		&:nth-child(odd) {
+			text-align: left;
+		}
+		&:nth-child(even) {
+			text-align: right;
+		}
+	}
+	.team-wrapper__teacher-img {
+		img {
+			width: 100%;
+			box-shadow: 6px 6px 5px $blackColor;
+		}
+	}
+	.form-wrapper {
+		background: none;
+	}
+	.form-wrapper__form {
+		p {
+			width: 80%;
+			margin-bottom: 30px;
+		}
+		label {
+			text-shadow: 2px 2px $backgroundColor;
+			color: $blackColor;
+		}
+		h3 {
+			color: $blackColor;
+			text-shadow: 3px 3px $backgroundColor;
+		}
+	}
+}
+@media screen and (min-width: ($tabletSize + 1)) {
+	.team-wrapper__teacher {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+		align-items: center;
+		margin-bottom: 80px;
+		&:nth-child(even) {
+			display: flex;
+			flex-direction: row-reverse;
+		}
+	}
+	.team-wrapper__teacher-img {
+		img {
+			width: 100%;
+			max-width: 600px;
+			min-height: 450px;
+			box-shadow: 11px 11px 11px $blackColor;
+		}
+	}
+	.form-wrapper {
+		background: none;
+		width: 50%;
+		margin: 0 auto;
+	}
+	.form-wrapper__form {
+		p {
+			width: 70%;
+			margin-bottom: 30px;
+		}
+		label {
+			text-shadow: 2px 2px $backgroundColor;
+			color: $blackColor;
+		}
+		h3 {
+			color: $blackColor;
+			text-shadow: 3px 3px $backgroundColor;
+		}
+	}
+}
+
