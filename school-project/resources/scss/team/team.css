@@ -10,6 +10,7 @@ main {
 .team-wrapper {
   margin: 0 auto;
 }
+
 @media screen and (min-width: 768px) {
   .team-wrapper {
     width: 80%;
@@ -31,10 +32,12 @@ main {
 .team-wrapper__teacher-about h1 {
   text-shadow: 4px 4px 4px #d47675;
 }
+
 .team-wrapper__teacher-about p {
   font-family: "Source Code Pro", monospace;
   text-shadow: 2px 2px 3px #d47675;
 }
+
 @media screen and (min-width: 769px) {
   .team-wrapper__teacher-about {
     width: 40%;
@@ -52,9 +55,16 @@ h3 {
 
 @media screen and (max-width: 768px) {
   .team-wrapper__teacher {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 50px;
   }
   .team-wrapper__teacher:nth-child(odd) {
@@ -65,7 +75,8 @@ h3 {
   }
   .team-wrapper__teacher-img img {
     width: 100%;
-    box-shadow: 6px 6px 5px rgb(0, 0, 0);
+    -webkit-box-shadow: 6px 6px 5px black;
+            box-shadow: 6px 6px 5px black;
   }
   .form-wrapper {
     background: none;
@@ -76,30 +87,45 @@ h3 {
   }
   .form-wrapper__form label {
     text-shadow: 2px 2px #eb9a7f;
-    color: rgb(0, 0, 0);
+    color: black;
   }
   .form-wrapper__form h3 {
-    color: rgb(0, 0, 0);
+    color: black;
     text-shadow: 3px 3px #eb9a7f;
   }
 }
+
 @media screen and (min-width: 769px) {
   .team-wrapper__teacher {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 80px;
   }
   .team-wrapper__teacher:nth-child(even) {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   .team-wrapper__teacher-img img {
     width: 100%;
     max-width: 600px;
     min-height: 450px;
-    box-shadow: 11px 11px 11px rgb(0, 0, 0);
+    -webkit-box-shadow: 11px 11px 11px black;
+            box-shadow: 11px 11px 11px black;
   }
   .form-wrapper {
     background: none;
@@ -112,10 +138,11 @@ h3 {
   }
   .form-wrapper__form label {
     text-shadow: 2px 2px #eb9a7f;
-    color: rgb(0, 0, 0);
+    color: black;
   }
   .form-wrapper__form h3 {
-    color: rgb(0, 0, 0);
+    color: black;
     text-shadow: 3px 3px #eb9a7f;
   }
-}/*# sourceMappingURL=team.css.map */
+}
+/*# sourceMappingURL=team.css.map */

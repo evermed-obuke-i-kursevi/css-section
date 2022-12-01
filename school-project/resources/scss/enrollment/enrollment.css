@@ -3,61 +3,82 @@
 .form-wrapper {
   padding: 50px 0;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: url("../../images/enrollment-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .form-wrapper__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: "Source Code Pro", monospace;
   font-size: 20px;
-  color: rgb(0, 0, 0);
+  color: black;
   padding: 5px;
 }
+
 .form-wrapper__form h3 {
   width: 100%;
   margin-bottom: 45px;
   color: #eb9a7f;
   font-weight: bolder;
   font-size: 30px;
-  text-shadow: 3px 3px rgb(0, 0, 0);
+  text-shadow: 3px 3px black;
 }
+
 .form-wrapper__form label {
   border: 3px solid #eb9a7f;
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   margin-bottom: 10px;
   font-family: "Courier Prime", monospace;
   font-size: 20px;
-  text-shadow: 2px 2px rgb(0, 0, 0);
+  text-shadow: 2px 2px black;
   border: none;
   text-decoration: underline;
   text-underline-offset: 5px;
   color: #eb9a7f;
   font-weight: bolder;
 }
+
 .form-wrapper__form input {
   width: 100%;
   height: 50px;
   padding: 10px;
-  box-shadow: 3px 3px 3px 3px #e9baab;
+  -webkit-box-shadow: 3px 3px 3px 3px #e9baab;
+          box-shadow: 3px 3px 3px 3px #e9baab;
 }
+
 .form-wrapper__form textarea {
   height: 250px;
   width: 100%;
   padding: 10px;
   resize: none;
-  box-shadow: 2px 2px 3px 2px #e9baab;
+  -webkit-box-shadow: 2px 2px 3px 2px #e9baab;
+          box-shadow: 2px 2px 3px 2px #e9baab;
 }
+
 .form-wrapper__form button {
   margin-top: 20px;
   background: #eb9a7f;
-  border: 3px solid rgb(0, 0, 0);
+  border: 3px solid black;
   border-radius: 15px;
   padding: 20px;
   font-family: "Source Code Pro", monospace;
@@ -65,11 +86,14 @@
   font-weight: bold;
   text-transform: uppercase;
 }
+
 .form-wrapper__form button:hover {
   cursor: pointer;
   background: #e9baab;
+  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
+
 @media screen and (max-width: 1440px) {
   .form-wrapper__form {
     width: 85%;
@@ -81,37 +105,44 @@
 
 input {
   border: 3px solid #eb9a7f;
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   margin-bottom: 10px;
   font-family: "Courier Prime", monospace;
   font-size: 20px;
 }
+
 input:focus {
   outline: none;
 }
 
 select {
   border: 3px solid #eb9a7f;
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   margin-bottom: 10px;
   font-family: "Courier Prime", monospace;
   font-size: 20px;
   width: 100%;
   height: 50px;
   padding: 10px;
-  box-shadow: 3px 3px 3px 3px #e9baab;
+  -webkit-box-shadow: 3px 3px 3px 3px #e9baab;
+          box-shadow: 3px 3px 3px 3px #e9baab;
 }
+
 select:focus {
   outline: none;
 }
 
 textarea {
   border: 3px solid #eb9a7f;
-  align-self: flex-start;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   margin-bottom: 10px;
   font-family: "Courier Prime", monospace;
   font-size: 20px;
 }
+
 textarea:focus {
   outline: none;
 }
@@ -120,4 +151,5 @@ textarea:focus {
   content: "*";
   color: red;
   font-weight: bolder;
-}/*# sourceMappingURL=enrollment.css.map */
+}
+/*# sourceMappingURL=enrollment.css.map */

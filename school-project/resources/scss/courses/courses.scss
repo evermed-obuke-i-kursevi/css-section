@@ -1,6 +1,6 @@
 @import '../utils/variables';
 @import '../utils/breakpoints';
-@import '../style.css';
+@import url('../style.css');
 
 .courses-wrapper {
 	background-image: url('../../images/courses-image.jpg');

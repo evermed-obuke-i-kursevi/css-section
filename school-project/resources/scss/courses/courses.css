@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Source+Code+Pro&display=swap");
-@import '../style.css';
+@import url("../style.css");
 .courses-wrapper {
   background-image: url("../../images/courses-image.jpg");
   background-size: cover;
@@ -8,13 +8,23 @@
   width: 100%;
   padding: 50px;
   opacity: 0.8;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 @media screen and (max-width: 576px) {
   .courses-wrapper {
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -30,11 +40,14 @@
   position: relative;
   z-index: 0;
 }
+
 .courses-wrapper__course:hover {
   cursor: pointer;
   border-color: #e0c0bf;
+  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
+
 .courses-wrapper__course h1 {
   font-family: "Source Code Pro", monospace;
   letter-spacing: 3px;
@@ -43,10 +56,12 @@
   font-size: 30px;
   margin: 0;
 }
+
 .courses-wrapper__course ul {
   font-size: 15px;
   font-family: "Courier Prime", monospace;
 }
+
 @media screen and (max-width: 576px) {
   .courses-wrapper__course {
     text-align: center;
@@ -69,20 +84,30 @@ p {
 }
 
 .basic-course {
-  order: 3;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
 }
 
 .advanced-course {
-  order: 1;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 .intermediate-course {
-  align-self: flex-end;
-  order: 2;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
 }
+
 @media screen and (max-width: 576px) {
   .intermediate-course {
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
@@ -99,21 +124,25 @@ p {
   padding: 5px;
   z-index: -1;
 }
+
 @media screen and (max-width: 576px) {
   .recommended {
     position: static;
   }
 }
+
 @media screen and (min-width: 577px) and (max-width: 1440px) {
   .recommended {
     position: static;
     text-align: center;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1440px) {
   .recommended {
     position: static;
     text-align: center;
     width: 70%;
   }
-}/*# sourceMappingURL=courses.css.map */
+}
+/*# sourceMappingURL=courses.css.map */
