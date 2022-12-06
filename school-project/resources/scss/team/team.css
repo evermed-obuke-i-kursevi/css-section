@@ -120,6 +120,10 @@ h3 {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
   }
+  .team-wrapper__teacher-img {
+    -webkit-transform: skewX(-5deg);
+            transform: skewX(-5deg);
+  }
   .team-wrapper__teacher-img img {
     width: 100%;
     max-width: 600px;

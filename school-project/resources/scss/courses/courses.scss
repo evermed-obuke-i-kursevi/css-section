@@ -24,7 +24,7 @@
 	width: 50%;
 	background-color: $bodyBackgroundColor;
 	padding: 25px;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 	opacity: 0.85;
 	min-height: 250px;
 	min-width: 300px;
@@ -50,6 +50,11 @@
 
     @media screen and (max-width: $phoneSize) {
         text-align: center;
+		transform: none;
+		transition: none;
+		&:hover {
+			transform: none;
+		}
 		ul {
 			list-style-type: none;
 			margin: 0;
@@ -72,10 +77,24 @@ p {
 .advanced-course {
 	order: 1;
 }
+
+.basic-course,
+.advanced-course {
+	transform: translateX(1) scale(1, 1);
+	transition: $standardTransition;
+	&:hover {
+		transform: translateX(50%) scale(1.2, 1.2);
+	}
+}
+
 .intermediate-course {
 	align-self: flex-end;
 	order: 2;
-    
+	transform: translateX(1) scale(1, 1);
+	transition: $standardTransition;
+    &:hover {
+		transform: translateX(-50%) scale(1.2, 1.2);
+	}
     @media screen and (max-width: $phoneSize) {
         align-self: center;
     }
