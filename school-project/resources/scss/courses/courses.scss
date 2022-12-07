@@ -50,10 +50,10 @@
 
     @media screen and (max-width: $phoneSize) {
         text-align: center;
-		transform: none;
-		transition: none;
+		transform: none !important;
+		transition: none !important;
 		&:hover {
-			transform: none;
+			transform: none !important;
 		}
 		ul {
 			list-style-type: none;
